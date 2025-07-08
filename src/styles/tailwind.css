@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #2563EB; /* blue-600 */
+    --color-primary-50: #EFF6FF; /* blue-50 */
+    --color-primary-100: #DBEAFE; /* blue-100 */
+    --color-primary-500: #3B82F6; /* blue-500 */
+    --color-primary-600: #2563EB; /* blue-600 */
+    --color-primary-700: #1D4ED8; /* blue-700 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #64748B; /* slate-500 */
+    --color-secondary-50: #F8FAFC; /* slate-50 */
+    --color-secondary-100: #F1F5F9; /* slate-100 */
+    --color-secondary-200: #E2E8F0; /* slate-200 */
+    --color-secondary-300: #CBD5E1; /* slate-300 */
+    --color-secondary-400: #94A3B8; /* slate-400 */
+    --color-secondary-500: #64748B; /* slate-500 */
+    --color-secondary-600: #475569; /* slate-600 */
+    --color-secondary-700: #334155; /* slate-700 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #F59E0B; /* amber-500 */
+    --color-accent-50: #FFFBEB; /* amber-50 */
+    --color-accent-100: #FEF3C7; /* amber-100 */
+    --color-accent-500: #F59E0B; /* amber-500 */
+    --color-accent-600: #D97706; /* amber-600 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Background Colors */
+    --color-background: #FFFFFF; /* white */
+    --color-surface: #F8FAFC; /* slate-50 */
+    --color-card: #FFFFFF; /* white */
+    --color-popover: #FFFFFF; /* white */
+    
+    /* Text Colors */
+    --color-text-primary: #0F172A; /* slate-900 */
+    --color-text-secondary: #475569; /* slate-600 */
+    --color-text-muted: #64748B; /* slate-500 */
+    --color-text-foreground: #0F172A; /* slate-900 */
+    
+    /* Status Colors */
+    --color-success: #10B981; /* emerald-500 */
+    --color-success-50: #ECFDF5; /* emerald-50 */
+    --color-success-100: #D1FAE5; /* emerald-100 */
+    --color-success-500: #10B981; /* emerald-500 */
+    --color-success-600: #059669; /* emerald-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-50: #FFFBEB; /* amber-50 */
+    --color-warning-100: #FEF3C7; /* amber-100 */
+    --color-warning-500: #F59E0B; /* amber-500 */
+    --color-warning-600: #D97706; /* amber-600 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    --color-error: #EF4444; /* red-500 */
+    --color-error-50: #FEF2F2; /* red-50 */
+    --color-error-100: #FEE2E2; /* red-100 */
+    --color-error-500: #EF4444; /* red-500 */
+    --color-error-600: #DC2626; /* red-600 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Border Colors */
+    --color-border: rgba(148, 163, 184, 0.2); /* slate-400 with opacity */
+    --color-input: #E2E8F0; /* slate-200 */
+    --color-ring: #2563EB; /* blue-600 */
+    
+    /* Shadow Colors */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Typography */
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-caption: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Transitions */
+    --transition-fast: 200ms ease-out;
+    --transition-normal: 300ms ease-in-out;
+    --transition-slow: 500ms ease-in-out;
+  }
+  
+  /* Dark theme variables */
+  .dark {
+    --color-background: #0F172A; /* slate-900 */
+    --color-surface: #1E293B; /* slate-800 */
+    --color-card: #1E293B; /* slate-800 */
+    --color-popover: #1E293B; /* slate-800 */
+    
+    --color-text-primary: #F8FAFC; /* slate-50 */
+    --color-text-secondary: #CBD5E1; /* slate-300 */
+    --color-text-muted: #94A3B8; /* slate-400 */
+    --color-text-foreground: #F8FAFC; /* slate-50 */
+    
+    --color-border: rgba(148, 163, 184, 0.3); /* slate-400 with opacity */
+    --color-input: #334155; /* slate-700 */
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+  
+  code, pre {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-200;
+  }
+  
+  .nav-link.active {
+    @apply text-primary;
+  }
+  
+  .nav-link.active::after {
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary;
+    content: '';
+  }
+  
+  .mobile-menu-overlay {
+    @apply fixed inset-0 bg-black/50 backdrop-blur-sm z-[1001];
+  }
+  
+  .mobile-menu {
+    @apply fixed top-0 right-0 h-full w-80 bg-background shadow-lg transform transition-transform duration-300 ease-in-out z-[1002];
+  }
+  
+  .mobile-menu.closed {
+    @apply translate-x-full;
+  }
+  
+  .mobile-menu.open {
+    @apply translate-x-0;
+  }
+  
+  .hamburger-line {
+    @apply block w-6 h-0.5 bg-text-primary transition-all duration-200 ease-in-out;
+  }
+  
+  .hamburger-line:not(:last-child) {
+    @apply mb-1;
+  }
+  
+  .hamburger.open .hamburger-line:nth-child(1) {
+    @apply rotate-45 translate-y-1.5;
+  }
+  
+  .hamburger.open .hamburger-line:nth-child(2) {
+    @apply opacity-0;
+  }
+  
+  .hamburger.open .hamburger-line:nth-child(3) {
+    @apply -rotate-45 -translate-y-1.5;
+  }
+  
+  .sticky-nav {
+    @apply fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md border-b border-border transition-all duration-300 ease-in-out z-[1000];
+  }
+  
+  .social-link {
+    @apply p-2 text-text-secondary hover:text-primary transition-colors duration-200 rounded-md hover:bg-surface;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+  
+  .transform-gpu {
+    transform: translateZ(0);
+  }
+}
