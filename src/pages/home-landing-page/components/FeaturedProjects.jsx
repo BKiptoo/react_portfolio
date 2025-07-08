@@ -59,6 +59,16 @@ const FeaturedProjects = () => {
     },
     {
       id: 6,
+      title: "School Management System",
+      description: "Comprehensive school management platform built with Laravel, featuring student enrollment, grade management, and parent-teacher communication.",
+      image: "https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=600&h=400&fit=crop",
+      technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+      liveUrl: "https://demo-school-system.com",
+      githubUrl: "https://github.com/bettson/school-management",
+      category: "Backend"
+    },
+    {
+      id: 7,
       title: "Portfolio Website",
       description: "Responsive portfolio website with modern design, smooth animations, and optimized performance for showcasing creative work.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",

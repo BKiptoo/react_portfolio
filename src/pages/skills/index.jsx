@@ -41,16 +41,17 @@ const Skills = () => {
       color: 'bg-green-500',
       description: 'Creating robust server-side applications and APIs',
       skills: [
-        { name: 'Node.js', level: 93, experience: '4+ years', category: 'Runtime' },
-        { name: 'Express.js', level: 90, experience: '4+ years', category: 'Framework' },
-        { name: 'Python', level: 85, experience: '3+ years', category: 'Programming' },
+        { name: 'Node.js', level: 93, experience: '3+ years', category: 'Runtime' },
+        { name: 'Express.js', level: 90, experience: '3+ years', category: 'Framework' },
+        { name: 'Python', level: 85, experience: '2+ years', category: 'Programming' },
         { name: 'Django', level: 82, experience: '2+ years', category: 'Framework' },
         { name: 'Flask', level: 80, experience: '2+ years', category: 'Framework' },
         { name: 'PHP', level: 78, experience: '2+ years', category: 'Programming' },
+        { name: 'Laravel', level: 82, experience: '2+ years', category: 'Framework' },
         { name: 'REST APIs', level: 95, experience: '4+ years', category: 'API' },
         { name: 'GraphQL', level: 80, experience: '2+ years', category: 'API' },
         { name: 'Socket.io', level: 75, experience: '1+ year', category: 'Real-time' },
-        { name: 'JWT Authentication', level: 88, experience: '3+ years', category: 'Security' },
+        { name: 'JWT Authentication', level: 88, experience: '2+ years', category: 'Security' },
         { name: 'Microservices', level: 75, experience: '1+ year', category: 'Architecture' },
         { name: 'API Integration', level: 92, experience: '4+ years', category: 'Integration' }
       ]
@@ -63,7 +64,7 @@ const Skills = () => {
       description: 'Managing data with various database technologies',
       skills: [
         { name: 'MongoDB', level: 88, experience: '3+ years', category: 'NoSQL' },
-        { name: 'MySQL', level: 85, experience: '4+ years', category: 'SQL' },
+        { name: 'MySQL', level: 85, experience: '3+ years', category: 'SQL' },
         { name: 'PostgreSQL', level: 82, experience: '2+ years', category: 'SQL' },
         { name: 'SQLite', level: 80, experience: '3+ years', category: 'SQL' },
         { name: 'Redis', level: 78, experience: '1+ year', category: 'Cache' },
@@ -71,7 +72,7 @@ const Skills = () => {
         { name: 'Supabase', level: 75, experience: '1+ year', category: 'BaaS' },
         { name: 'Prisma ORM', level: 80, experience: '1+ year', category: 'ORM' },
         { name: 'Mongoose', level: 85, experience: '3+ years', category: 'ODM' },
-        { name: 'Database Design', level: 88, experience: '4+ years', category: 'Design' }
+        { name: 'Database Design', level: 88, experience: '3+ years', category: 'Design' }
       ]
     },
     {
@@ -266,7 +267,7 @@ const Skills = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Icon name="Calendar" size={20} className="text-primary" />
-                <span className="text-text-secondary">5+ Years Experience</span>
+                <span className="text-text-secondary">4+ Years Experience</span>
               </div>
             </div>
           </div>

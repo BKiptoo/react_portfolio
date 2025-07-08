@@ -14,7 +14,7 @@ const PersonalIntro = () => {
             </h2>
             <div className="space-y-6 text-lg text-text-secondary">
               <p>
-                I'm a passionate full-stack developer with over 5 years of experience creating 
+                I'm a passionate full-stack developer with over 4 years of experience creating 
                 digital solutions that make a difference. My journey in technology began with a 
                 curiosity about how things work behind the scenes of the web, and it has evolved 
                 into a career dedicated to crafting exceptional user experiences.
@@ -39,7 +39,7 @@ const PersonalIntro = () => {
                   <Icon name="Calendar" size={20} className="text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-text-primary">5+ Years</div>
+                  <div className="font-semibold text-text-primary">4+ Years</div>
                   <div className="text-sm text-text-secondary">Experience</div>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const PersonalIntro = () => {
                   <Icon name="Code" size={20} className="text-purple-600" />
                 </div>
                 <div>
-                  <div className="font-semibold text-text-primary">10+</div>
+                  <div className="font-semibold text-text-primary">4+</div>
                   <div className="text-sm text-text-secondary">Technologies</div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const PersonalIntro = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-2xl opacity-20 scale-110"></div>
               <div className="relative w-80 h-96 lg:w-96 lg:h-[500px] rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face"
+                  src="./public/assets/images/profile.jpg"
                   alt="Bettson Kiptoo - About"
                   className="w-full h-full object-cover"
                 />

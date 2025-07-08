@@ -8,18 +8,18 @@ const ComprehensiveSkills = () => {
       icon: 'Monitor',
       color: 'bg-blue-500',
       skills: [
-        { name: 'HTML5', level: 96, experience: '5+ years' },
-        { name: 'CSS3/SCSS', level: 94, experience: '5+ years' },
-        { name: 'JavaScript (ES6+)', level: 92, experience: '5+ years' },
-        { name: 'TypeScript', level: 88, experience: '3+ years' },
-        { name: 'React.js', level: 95, experience: '4+ years' },
+        { name: 'HTML5', level: 96, experience: '4+ years' },
+        { name: 'CSS3/SCSS', level: 94, experience: '4+ years' },
+        { name: 'JavaScript (ES6+)', level: 92, experience: '4+ years' },
+        { name: 'TypeScript', level: 88, experience: '2+ years' },
+        { name: 'React.js', level: 95, experience: '3+ years' },
         { name: 'Next.js', level: 88, experience: '2+ years' },
         { name: 'Vue.js', level: 80, experience: '2+ years' },
-        { name: 'Tailwind CSS', level: 90, experience: '3+ years' },
-        { name: 'Bootstrap', level: 88, experience: '4+ years' },
+        { name: 'Tailwind CSS', level: 90, experience: '2+ years' },
+        { name: 'Bootstrap', level: 88, experience: '3+ years' },
         { name: 'Material-UI', level: 85, experience: '2+ years' },
         { name: 'Framer Motion', level: 80, experience: '1+ year' },
-        { name: 'Redux/Zustand', level: 85, experience: '3+ years' }
+        { name: 'Redux/Zustand', level: 85, experience: '2+ years' }
       ]
     },
     {
@@ -27,12 +27,13 @@ const ComprehensiveSkills = () => {
       icon: 'Server',
       color: 'bg-green-500',
       skills: [
-        { name: 'Node.js', level: 93, experience: '4+ years' },
-        { name: 'Express.js', level: 90, experience: '4+ years' },
-        { name: 'Python', level: 85, experience: '3+ years' },
+        { name: 'Node.js', level: 93, experience: '3+ years' },
+        { name: 'Express.js', level: 90, experience: '3+ years' },
+        { name: 'Python', level: 85, experience: '2+ years' },
         { name: 'Django', level: 82, experience: '2+ years' },
         { name: 'Flask', level: 80, experience: '2+ years' },
         { name: 'PHP', level: 78, experience: '2+ years' },
+        { name: 'Laravel', level: 82, experience: '2+ years' },
         { name: 'REST APIs', level: 95, experience: '4+ years' },
         { name: 'GraphQL', level: 80, experience: '2+ years' },
         { name: 'Socket.io', level: 75, experience: '1+ year' },
@@ -191,7 +192,7 @@ const ComprehensiveSkills = () => {
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto">
             A comprehensive overview of my technical capabilities, certifications, and 
-            professional skills developed over 5+ years of experience.
+            professional skills developed over 4+ years of experience.
           </p>
         </div>
 

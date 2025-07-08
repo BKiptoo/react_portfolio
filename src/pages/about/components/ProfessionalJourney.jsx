@@ -4,35 +4,35 @@ import Icon from '../../../components/AppIcon';
 const ProfessionalJourney = () => {
   const milestones = [
     {
-      year: '2019',
+      year: '2021',
       title: 'Started My Journey',
       description: 'Began learning web development with HTML, CSS, and JavaScript during university',
       icon: 'Play',
       color: 'bg-blue-500'
     },
     {
-      year: '2020',
+      year: '2023',
       title: 'First Professional Role',
       description: 'Joined as Junior Developer at a local tech startup in Nairobi, focusing on React applications',
       icon: 'Briefcase',
       color: 'bg-green-500'
     },
     {
-      year: '2021',
+      year: '2024',
       title: 'Full-Stack Mastery',
       description: 'Expanded skills to include Node.js, databases, and cloud technologies through various projects',
       icon: 'Code',
       color: 'bg-purple-500'
     },
     {
-      year: '2022',
-      title: 'Senior Developer',
-      description: 'Promoted to Senior Full-Stack Developer, leading development of e-commerce and fintech solutions',
+      year: '2024',
+      title: 'Mid-Level Developer',
+      description: 'Promoted to Mid-Level Full-Stack Developer, leading development of e-commerce and fintech solutions',
       icon: 'TrendingUp',
       color: 'bg-orange-500'
     },
     {
-      year: '2023',
+      year: '2025',
       title: 'Freelance Success',
       description: 'Launched independent practice, serving clients across Kenya and internationally',
       icon: 'Globe',

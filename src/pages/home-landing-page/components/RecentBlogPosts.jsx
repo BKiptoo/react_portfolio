@@ -37,6 +37,17 @@ const RecentBlogPosts = () => {
       publishDate: "2024-01-05",
       author: "Bettson Kiptoo",
       tags: ["Node.js", "Backend", "Production", "Security"]
+    },
+    {
+      id: 4,
+      title: "Getting Started with Laravel: Building Modern Web Applications",
+      excerpt: "A comprehensive guide to Laravel framework, covering MVC architecture, Eloquent ORM, and building scalable PHP applications.",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop",
+      category: "Laravel",
+      readTime: "12 min read",
+      publishDate: "2024-02-20",
+      author: "Bettson Kiptoo",
+      tags: ["Laravel", "PHP", "Backend", "Framework"]
     }
   ];
 

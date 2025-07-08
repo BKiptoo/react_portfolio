@@ -216,7 +216,7 @@ const ClientTestimonials = () => {
           {[
             { number: "50+", label: "Projects Completed", icon: "CheckCircle" },
             { number: "25+", label: "Happy Clients", icon: "Users" },
-            { number: "5+", label: "Years Experience", icon: "Calendar" },
+            { number: "4+", label: "Years Experience", icon: "Calendar" },
             { number: "100%", label: "Client Satisfaction", icon: "Star" }
           ].map((stat, index) => (
             <div key={index} className="text-center">

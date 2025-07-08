@@ -52,7 +52,7 @@ const About = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Icon name="Code" size={20} className="text-primary" />
-                <span className="text-text-secondary">5+ Years Experience</span>
+                <span className="text-text-secondary">4+ Years Experience</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Icon name="Coffee" size={20} className="text-primary" />

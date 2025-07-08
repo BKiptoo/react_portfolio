@@ -93,7 +93,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-20 scale-110"></div>
               <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src="./public/assets/images/profile.jpg"
                   alt="Bettson Kiptoo - Full Stack Developer"
                   className="w-full h-full object-cover"
                 />

@@ -35,7 +35,7 @@ const Services = () => {
         'SSL Certificate Setup',
         'Mobile-first Approach'
       ],
-      technologies: ['React', 'Next.js', 'HTML5', 'CSS3', 'JavaScript', 'Node.js'],
+      technologies: ['React', 'Next.js', 'HTML5', 'CSS3', 'JavaScript', 'Node.js', 'PHP', 'Laravel'],
       deliverables: [
         'Fully functional website',
         'Source code documentation',
@@ -103,7 +103,7 @@ const Services = () => {
         'Security Implementation',
         'Performance Monitoring'
       ],
-      technologies: ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL', 'AWS', 'Docker'],
+      technologies: ['Node.js', 'Express.js', 'PHP', 'Laravel', 'MongoDB', 'PostgreSQL', 'AWS', 'Docker'],
       deliverables: [
         'Complete backend system',
         'API documentation',
@@ -226,7 +226,7 @@ const Services = () => {
   const whyChooseMe = [
     {
       title: 'Proven Expertise',
-      description: '5+ years of experience delivering successful projects across various industries',
+      description: '4+ years of experience delivering successful projects across various industries',
       icon: 'Award',
       color: 'bg-blue-100 text-blue-600'
     },

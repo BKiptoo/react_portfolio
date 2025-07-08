@@ -23,7 +23,9 @@ const SkillsOverview = () => {
       skills: [
         { name: "Node.js", level: 90, color: "bg-green-600" },
         { name: "Python", level: 85, color: "bg-blue-500" },
+        { name: "PHP", level: 78, color: "bg-purple-600" },
         { name: "Express.js", level: 88, color: "bg-gray-600" },
+        { name: "Laravel", level: 82, color: "bg-red-500" },
         { name: "Django", level: 82, color: "bg-green-700" },
         { name: "PostgreSQL", level: 85, color: "bg-blue-700" },
         { name: "MongoDB", level: 88, color: "bg-green-500" }
