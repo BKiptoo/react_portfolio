@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 
 # Create your models here.
 
@@ -17,3 +18,15 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_formatted_date(self):
+        """Return date in 'January 15, 2024' format"""
+        if self.date:
+            return self.date.strftime('%B %d, %Y')
+        return "No date"
+
+    def save(self, *args, **kwargs):
+        # Set default date to today if not provided
+        if not self.date:
+            self.date = datetime.now().date()
+        super().save(*args, **kwargs)

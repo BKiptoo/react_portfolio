@@ -28,7 +28,7 @@ const Blog = () => {
       excerpt: blog.content.length > 180 ? blog.content.slice(0, 180) + '...' : blog.content,
       content: blog.content,
       image: blog.image || '', // If you add image support to backend
-      date: blog.created_at,
+      date: blog.formatted_date || blog.date, // Use formatted date from backend
       author: blog.author,
       readTime: blog.readTime || '', // If you add readTime to backend
       category: blog.category || 'General', // If you add category to backend
@@ -73,7 +73,9 @@ const Blog = () => {
   };
 
   const formatDate = (dateString) => {
+    if (!dateString || dateString === "No date") return "No date";
     const date = new Date(dateString);
+    if (isNaN(date.getTime())) return "No date";
     return date.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
